@@ -37,6 +37,7 @@ float distanceToScene(Ray r, Sphere s, float range) {
   repeatRay.origin = fmod(r.origin, range);
   return distanceToSphere(repeatRay, s);
 }
+
 kernel void compute(texture2d<float, access::write> output [[texture(0)]],
                     constant float &time [[buffer(0)]],
                     uint2 gid [[thread_position_in_grid]]) {
