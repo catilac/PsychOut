@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4645A19A230C3BD50012321E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4645A199230C3BD50012321E /* AppDelegate.swift */; };
+		4645A19C230C3BD50012321E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4645A19B230C3BD50012321E /* ViewController.swift */; };
+		4645A1A1230C3BD50012321E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4645A19F230C3BD50012321E /* Main.storyboard */; };
+		4645A1AC230C3BDF0012321E /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4645A1AA230C3BDF0012321E /* MetalKit.framework */; };
+		4645A1AD230C3BDF0012321E /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4645A1AB230C3BDF0012321E /* Metal.framework */; };
+		4645A1B1230C3C230012321E /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4645A1B0230C3C230012321E /* Shaders.metal */; };
+		4645A1B3230C3C2E0012321E /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4645A1B2230C3C2E0012321E /* Renderer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4645A196230C3BD50012321E /* PsychOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PsychOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4645A199230C3BD50012321E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4645A19B230C3BD50012321E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4645A1A0230C3BD50012321E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4645A1A2230C3BD50012321E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4645A1A3230C3BD50012321E /* PsychOut.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PsychOut.entitlements; sourceTree = "<group>"; };
+		4645A1AA230C3BDF0012321E /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		4645A1AB230C3BDF0012321E /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		4645A1B0230C3C230012321E /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		4645A1B2230C3C2E0012321E /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4645A193230C3BD50012321E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4645A1AC230C3BDF0012321E /* MetalKit.framework in Frameworks */,
+				4645A1AD230C3BDF0012321E /* Metal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4645A18D230C3BD50012321E = {
+			isa = PBXGroup;
+			children = (
+				4645A198230C3BD50012321E /* PsychOut */,
+				4645A197230C3BD50012321E /* Products */,
+				4645A1A9230C3BDF0012321E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4645A197230C3BD50012321E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4645A196230C3BD50012321E /* PsychOut.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4645A198230C3BD50012321E /* PsychOut */ = {
+			isa = PBXGroup;
+			children = (
+				4645A1AF230C3C170012321E /* Renderer */,
+				4645A1AE230C3BE90012321E /* Application */,
+				4645A1A2230C3BD50012321E /* Info.plist */,
+				4645A1A3230C3BD50012321E /* PsychOut.entitlements */,
+			);
+			path = PsychOut;
+			sourceTree = "<group>";
+		};
+		4645A1A9230C3BDF0012321E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4645A1AB230C3BDF0012321E /* Metal.framework */,
+				4645A1AA230C3BDF0012321E /* MetalKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4645A1AE230C3BE90012321E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4645A19F230C3BD50012321E /* Main.storyboard */,
+				4645A199230C3BD50012321E /* AppDelegate.swift */,
+				4645A19B230C3BD50012321E /* ViewController.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4645A1AF230C3C170012321E /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				4645A1B0230C3C230012321E /* Shaders.metal */,
+				4645A1B2230C3C2E0012321E /* Renderer.swift */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4645A195230C3BD50012321E /* PsychOut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4645A1A6230C3BD50012321E /* Build configuration list for PBXNativeTarget "PsychOut" */;
+			buildPhases = (
+				4645A192230C3BD50012321E /* Sources */,
+				4645A193230C3BD50012321E /* Frameworks */,
+				4645A194230C3BD50012321E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PsychOut;
+			productName = PsychOut;
+			productReference = 4645A196230C3BD50012321E /* PsychOut.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4645A18E230C3BD50012321E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Super Catilac, Inc";
+				TargetAttributes = {
+					4645A195230C3BD50012321E = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 4645A191230C3BD50012321E /* Build configuration list for PBXProject "PsychOut" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4645A18D230C3BD50012321E;
+			productRefGroup = 4645A197230C3BD50012321E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4645A195230C3BD50012321E /* PsychOut */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4645A194230C3BD50012321E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4645A1A1230C3BD50012321E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4645A192230C3BD50012321E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4645A1B3230C3C2E0012321E /* Renderer.swift in Sources */,
+				4645A1B1230C3C230012321E /* Shaders.metal in Sources */,
+				4645A19C230C3BD50012321E /* ViewController.swift in Sources */,
+				4645A19A230C3BD50012321E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4645A19F230C3BD50012321E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4645A1A0230C3BD50012321E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4645A1A4230C3BD50012321E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4645A1A5230C3BD50012321E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4645A1A7230C3BD50012321E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PsychOut/PsychOut.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q4M29PLT7E;
+				INFOPLIST_FILE = PsychOut/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.supercatilac.PsychOut;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4645A1A8230C3BD50012321E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PsychOut/PsychOut.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q4M29PLT7E;
+				INFOPLIST_FILE = PsychOut/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.supercatilac.PsychOut;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4645A191230C3BD50012321E /* Build configuration list for PBXProject "PsychOut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4645A1A4230C3BD50012321E /* Debug */,
+				4645A1A5230C3BD50012321E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4645A1A6230C3BD50012321E /* Build configuration list for PBXNativeTarget "PsychOut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4645A1A7230C3BD50012321E /* Debug */,
+				4645A1A8230C3BD50012321E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4645A18E230C3BD50012321E /* Project object */;
+}
