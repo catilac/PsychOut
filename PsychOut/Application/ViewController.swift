@@ -22,7 +22,28 @@ class ViewController: NSViewController {
       fatalError("metalView not setup in storyboard")
     }
 
-    // Set default text to the compute shader code
+    setDefaultCode()
+    
+    renderer = Renderer()
+    editor?.renderer = renderer
+    renderer?.computeShader = editor
+    metalView.device = renderer?.device
+    
+    // So we can write to textures via compute shader
+    metalView.framebufferOnly = false
+    
+    metalView.delegate = renderer
+  }
+
+  override var representedObject: Any? {
+    didSet {
+    // Update the view, if already loaded.
+    }
+  }
+  
+  // MARK: Private Functions
+  
+  private func setDefaultCode() {
     if let filepath = Bundle.main.path(forResource: "DefaultShader", ofType: nil) {
       do {
         let code = try String(contentsOfFile: filepath)
@@ -31,23 +52,7 @@ class ViewController: NSViewController {
         print(error)
       }
     } else {
-      fatalError()
-    }
-
-  
-    
-    renderer = Renderer()
-    metalView.device = renderer?.device
-    
-    // So we can write to textures via compute shader
-    metalView.framebufferOnly = false
-    metalView.delegate = renderer
-    
-  }
-
-  override var representedObject: Any? {
-    didSet {
-    // Update the view, if already loaded.
+      fatalError("Could not load default shader")
     }
   }
 

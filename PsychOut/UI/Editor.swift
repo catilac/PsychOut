@@ -9,18 +9,33 @@
 import Foundation
 import AppKit
 
-class Editor : NSScrollView {
+protocol Shader {
+  func getCode() -> String
+}
+
+class Editor : NSScrollView, Shader {
   var textView: NSTextField!
+  public weak var renderer: Renderer?
   
   required init?(coder: NSCoder) {
     super.init(coder: coder)
     borderType = .bezelBorder
     textView = NSTextField(frame: NSRect(x: 0, y: 0, width: frame.width, height: frame.height))
+    textView.delegate = self
     documentView = textView
   }
   
   func setText(text: String) {
     textView.stringValue = text
-    print("Setting editor text to: \(text)")
+  }
+  
+  func getCode() -> String {
+    return textView.stringValue
+  }
+}
+
+extension Editor : NSTextFieldDelegate {
+  func controlTextDidChange(_ obj: Notification) {
+    renderer?.updatePipelineState()
   }
 }
