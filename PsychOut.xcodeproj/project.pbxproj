@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		4645A19A230C3BD50012321E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4645A199230C3BD50012321E /* AppDelegate.swift */; };
 		4645A19C230C3BD50012321E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4645A19B230C3BD50012321E /* ViewController.swift */; };
-		4645A1A1230C3BD50012321E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4645A19F230C3BD50012321E /* Main.storyboard */; };
 		4645A1AC230C3BDF0012321E /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4645A1AA230C3BDF0012321E /* MetalKit.framework */; };
 		4645A1AD230C3BDF0012321E /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4645A1AB230C3BDF0012321E /* Metal.framework */; };
-		4645A1B1230C3C230012321E /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4645A1B0230C3C230012321E /* Shaders.metal */; };
 		4645A1B3230C3C2E0012321E /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4645A1B2230C3C2E0012321E /* Renderer.swift */; };
 		46C7F171230D91C400137C94 /* Editor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C7F170230D91C400137C94 /* Editor.swift */; };
+		46C93E50230DBF870041A1E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4645A19F230C3BD50012321E /* Main.storyboard */; };
+		46C93E52230DC0950041A1E8 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4645A1B0230C3C230012321E /* Shaders.metal */; };
+		46C93E54230DC7020041A1E8 /* DefaultShader in Resources */ = {isa = PBXBuildFile; fileRef = 46C93E53230DC7020041A1E8 /* DefaultShader */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		4645A1B0230C3C230012321E /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 		4645A1B2230C3C2E0012321E /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		46C7F170230D91C400137C94 /* Editor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Editor.swift; sourceTree = "<group>"; };
+		46C93E53230DC7020041A1E8 /* DefaultShader */ = {isa = PBXFileReference; lastKnownFileType = text; path = DefaultShader; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				4645A1AE230C3BE90012321E /* Application */,
 				4645A1A2230C3BD50012321E /* Info.plist */,
 				4645A1A3230C3BD50012321E /* PsychOut.entitlements */,
+				46C93E53230DC7020041A1E8 /* DefaultShader */,
 			);
 			path = PsychOut;
 			sourceTree = "<group>";
@@ -167,7 +170,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4645A1A1230C3BD50012321E /* Main.storyboard in Resources */,
+				46C93E54230DC7020041A1E8 /* DefaultShader in Resources */,
+				46C93E50230DBF870041A1E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4645A1B3230C3C2E0012321E /* Renderer.swift in Sources */,
-				4645A1B1230C3C230012321E /* Shaders.metal in Sources */,
+				46C93E52230DC0950041A1E8 /* Shaders.metal in Sources */,
 				4645A19C230C3BD50012321E /* ViewController.swift in Sources */,
 				4645A19A230C3BD50012321E /* AppDelegate.swift in Sources */,
 				46C7F171230D91C400137C94 /* Editor.swift in Sources */,

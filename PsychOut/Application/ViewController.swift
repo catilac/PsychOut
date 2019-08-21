@@ -21,8 +21,20 @@ class ViewController: NSViewController {
     guard let metalView = metalView else {
       fatalError("metalView not setup in storyboard")
     }
-    
-    editor?.setText(text: "Hello, World!")
+
+    // Set default text to the compute shader code
+    if let filepath = Bundle.main.path(forResource: "DefaultShader", ofType: nil) {
+      do {
+        let code = try String(contentsOfFile: filepath)
+        editor?.setText(text: code)
+      } catch {
+        print(error)
+      }
+    } else {
+      fatalError()
+    }
+
+  
     
     renderer = Renderer()
     metalView.device = renderer?.device
