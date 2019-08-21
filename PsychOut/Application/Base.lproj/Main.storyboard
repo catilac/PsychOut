@@ -713,7 +713,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1000" height="800"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9E-6D-tq4">
+                                    <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9E-6D-tq4" customClass="Editor" customModule="PsychOut" customModuleProvider="target">
                                         <rect key="frame" x="498" y="103" width="502" height="697"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="7RC-Gh-EHb">
@@ -745,6 +745,7 @@
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="editor" destination="l9E-6D-tq4" id="q55-ON-lRn"/>
                         <outlet property="metalView" destination="5gi-NP-EYK" id="N1B-QB-Of9"/>
                     </connections>
                 </viewController>

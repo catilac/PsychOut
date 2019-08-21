@@ -13,6 +13,7 @@ class ViewController: NSViewController {
   var renderer: Renderer?
   
   @IBOutlet weak var metalView: MTKView?
+  @IBOutlet weak var editor: Editor?
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -20,6 +21,8 @@ class ViewController: NSViewController {
     guard let metalView = metalView else {
       fatalError("metalView not setup in storyboard")
     }
+    
+    editor?.setText(text: "Hello, World!")
     
     renderer = Renderer()
     metalView.device = renderer?.device

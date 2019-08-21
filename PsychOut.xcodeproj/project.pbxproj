@@ -14,6 +14,7 @@
 		4645A1AD230C3BDF0012321E /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4645A1AB230C3BDF0012321E /* Metal.framework */; };
 		4645A1B1230C3C230012321E /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4645A1B0230C3C230012321E /* Shaders.metal */; };
 		4645A1B3230C3C2E0012321E /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4645A1B2230C3C2E0012321E /* Renderer.swift */; };
+		46C7F171230D91C400137C94 /* Editor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C7F170230D91C400137C94 /* Editor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		4645A1AB230C3BDF0012321E /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		4645A1B0230C3C230012321E /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 		4645A1B2230C3C2E0012321E /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		46C7F170230D91C400137C94 /* Editor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Editor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		4645A198230C3BD50012321E /* PsychOut */ = {
 			isa = PBXGroup;
 			children = (
+				46C7F16F230D919B00137C94 /* UI */,
 				4645A1AF230C3C170012321E /* Renderer */,
 				4645A1AE230C3BE90012321E /* Application */,
 				4645A1A2230C3BD50012321E /* Info.plist */,
@@ -96,6 +99,14 @@
 				4645A1B2230C3C2E0012321E /* Renderer.swift */,
 			);
 			path = Renderer;
+			sourceTree = "<group>";
+		};
+		46C7F16F230D919B00137C94 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				46C7F170230D91C400137C94 /* Editor.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 				4645A1B1230C3C230012321E /* Shaders.metal in Sources */,
 				4645A19C230C3BD50012321E /* ViewController.swift in Sources */,
 				4645A19A230C3BD50012321E /* AppDelegate.swift in Sources */,
+				46C7F171230D91C400137C94 /* Editor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
