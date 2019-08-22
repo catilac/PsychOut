@@ -20,7 +20,7 @@ class Editor : NSScrollView, Shader {
   required init?(coder: NSCoder) {
     super.init(coder: coder)
     borderType = .bezelBorder
-    textView = NSTextField(frame: NSRect(x: 0, y: 0, width: frame.width, height: frame.height))
+    textView = NSTextField(frame: NSRect(x: 0, y: 0, width: frame.width, height: 2*frame.height))
     textView.delegate = self
     documentView = textView
   }

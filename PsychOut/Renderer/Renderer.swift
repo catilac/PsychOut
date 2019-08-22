@@ -19,6 +19,8 @@ class Renderer : NSObject {
       createNewPipelineState(shader: computeShader)
     }
   }
+  
+  // TODO - add functionality for fragment and vertex shaders
   public var fragmentShader: Shader!
   public var vertexShader: Shader!
   
@@ -45,6 +47,9 @@ class Renderer : NSObject {
     print("...DONE!")
   }
 }
+
+
+// MARK: - MTKViewDelegate methods
 
 extension Renderer : MTKViewDelegate {
   func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize) {
