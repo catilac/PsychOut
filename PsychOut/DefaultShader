@@ -1,11 +1,3 @@
-//
-//  Shaders.metal
-//  PsychOut
-//
-//  Created by Chirag Davé on 8/20/19.
-//  Copyright © 2019 Super Catilac, Inc. All rights reserved.
-//
-
 #include <metal_stdlib>
 using namespace metal;
 
