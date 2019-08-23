@@ -31,7 +31,6 @@ class Renderer : NSObject {
   }
   
   private func createNewPipelineState(shader: Shader) {
-    // TODO do this not on the main thread
     do {
       let library = try device.makeLibrary(source: shader.getCode(), options: nil)
       guard let kernel = library.makeFunction(name: "compute") else { fatalError() }
