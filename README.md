@@ -1,16 +1,18 @@
 # PSYCHOUT
 
-THIS IS A LIVE SHADER EDITOR.
+Edit Metal Shaders in Real time. 
+Currently only supports editing a compute shader.
 
 # PHASE ONE TODO
-  [🌞] LIVE CODE EDITING
-  [ ] TRANSPARENT BACKGROUND FOR EDITOR
-  [ ] DEBUG OUTPUT
-  [ ] INCORPORATE FRAG AND VERT SHADERS
+  [🌞] Live code editing
+  [ ] Usable Editor
+  [ ] Transparent background for editor
+  [ ] Debug output window
+  [ ] Incorporate frag and vert shaders
 
 # PHASE TWO ???
-  [ ] BETTER UI
-  [ ] MODEL IMPORT
-  [ ] Load an image
-  [ ] autocomplete functions
+  [ ] Improved UI
+  [ ] Model import
+  [ ] Image loading
+  [ ] Autocomplete
 
