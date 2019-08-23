@@ -5,7 +5,7 @@ Currently only supports editing a compute shader.
 
 # PHASE ONE TODO
   [🌞] Live code editing
-  [ ] Usable Editor
+  [🌞] Usable Editor
   [ ] Transparent background for editor
   [ ] Debug output window
   [ ] Incorporate frag and vert shaders

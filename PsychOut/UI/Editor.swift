@@ -14,28 +14,29 @@ protocol Shader {
 }
 
 class Editor : NSScrollView, Shader {
-  var textView: NSTextField!
+  var textView: NSTextView!
   public weak var renderer: Renderer?
   
   required init?(coder: NSCoder) {
     super.init(coder: coder)
     borderType = .bezelBorder
-    textView = NSTextField(frame: NSRect(x: 0, y: 0, width: frame.width, height: 2*frame.height))
+    textView = NSTextView(frame: NSRect(x: 0, y: 0, width: frame.width, height: 2*frame.height))
     textView.delegate = self
     documentView = textView
   }
   
   func setText(text: String) {
-    textView.stringValue = text
+    textView.string = text
+
   }
   
   func getCode() -> String {
-    return textView.stringValue
+    return textView.string
   }
 }
 
-extension Editor : NSTextFieldDelegate {
-  func controlTextDidChange(_ obj: Notification) {
+extension Editor : NSTextViewDelegate, NSTextDelegate {
+  func textDidChange(_ notification: Notification) {
     renderer?.updatePipelineState()
   }
 }
