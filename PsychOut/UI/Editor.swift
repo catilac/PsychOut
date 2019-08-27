@@ -19,15 +19,16 @@ class Editor : NSScrollView, Shader {
   
   required init?(coder: NSCoder) {
     super.init(coder: coder)
-    borderType = .bezelBorder
     textView = NSTextView(frame: NSRect(x: 0, y: 0, width: frame.width, height: 2*frame.height))
+    textView.typingAttributes = [NSAttributedString.Key.backgroundColor: NSColor(calibratedRed: 0.5, green: 0.5, blue: 0.5, alpha: 0.5)]
     textView.delegate = self
+    textView.textColor = NSColor.white
+    textView.backgroundColor = NSColor(calibratedHue: 1.0, saturation: 1.0, brightness: 1.0, alpha: 0)
     documentView = textView
   }
   
   func setText(text: String) {
     textView.string = text
-
   }
   
   func getCode() -> String {

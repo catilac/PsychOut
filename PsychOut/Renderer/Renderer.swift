@@ -51,9 +51,7 @@ class Renderer : NSObject {
 // MARK: - MTKViewDelegate methods
 
 extension Renderer : MTKViewDelegate {
-  func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize) {
-    print(size.width, size.height)
-  }
+  func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize) {}
   
   func draw(in view: MTKView) {
     time += 0.01
