@@ -13,7 +13,7 @@ class POTextStorage : NSTextStorage {
   private var storage: NSMutableAttributedString
   
   override init() {
-    storage = NSMutableAttributedString(string: "", attributes: [NSAttributedString.Key.foregroundColor : NSColor.green])
+    storage = NSMutableAttributedString(string: "", attributes: nil)
     super.init()
   }
   

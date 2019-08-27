@@ -16,20 +16,22 @@ protocol Shader {
 class Editor : NSScrollView, Shader {
   var textView: NSTextView!
   public weak var renderer: Renderer?
-  private var textStorage: POTextStorage!
+//  private var textStorage: POTextStorage!
   
   private func initTextView() {
-    textStorage = POTextStorage()
-    let layoutManager = NSLayoutManager()
-    let textContainer = NSTextContainer(containerSize: frame.size)
-
-    textStorage.addLayoutManager(layoutManager)
-    layoutManager.addTextContainer(textContainer)
+//    textStorage = POTextStorage()
+//    let layoutManager = NSLayoutManager()
+//    let textContainer = NSTextContainer(containerSize: frame.size)
+//
+//    textStorage.addLayoutManager(layoutManager)
+//    layoutManager.addTextContainer(textContainer)
     
-    textView = NSTextView(frame: NSRect(x: 0, y: 0, width: frame.width, height: frame.height),
-                          textContainer: textContainer)
+    textView = NSTextView(frame: NSRect(x: 0, y: 0, width: frame.width, height: frame.height))//,
+//                          textContainer: textContainer)
+    textView.typingAttributes = [NSAttributedString.Key.backgroundColor: NSColor(calibratedRed: 0.5, green: 0.5, blue: 0.5, alpha: 0.5)]
     textView.delegate = self
     textView.textColor = NSColor.white
+    textView.backgroundColor = NSColor(calibratedHue: 1.0, saturation: 1.0, brightness: 1.0, alpha: 0)
     
     if let font = NSFont(name: "Courier", size: 13.0) {
       textView.font = font

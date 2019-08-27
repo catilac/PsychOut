@@ -717,15 +717,15 @@
                                 <rect key="frame" x="517" y="0.0" width="483" height="800"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
                                 <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="7RC-Gh-EHb">
-                                    <rect key="frame" x="0.0" y="0.0" width="483" height="800"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="468" height="800"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView ambiguous="YES" importsGraphics="NO" richText="NO" verticallyResizable="YES" findStyle="bar" spellingCorrection="YES" smartInsertDelete="YES" id="gkD-BS-RLZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="483" height="800"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="468" height="800"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="483" height="800"/>
+                                            <size key="minSize" width="468" height="800"/>
                                             <size key="maxSize" width="985" height="10000000"/>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
@@ -736,7 +736,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="HC6-lw-rnl">
-                                    <rect key="frame" x="467" y="0.0" width="16" height="800"/>
+                                    <rect key="frame" x="468" y="0.0" width="15" height="800"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
