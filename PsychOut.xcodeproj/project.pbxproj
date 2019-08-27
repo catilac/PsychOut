@@ -12,6 +12,7 @@
 		4645A1AC230C3BDF0012321E /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4645A1AA230C3BDF0012321E /* MetalKit.framework */; };
 		4645A1AD230C3BDF0012321E /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4645A1AB230C3BDF0012321E /* Metal.framework */; };
 		4645A1B3230C3C2E0012321E /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4645A1B2230C3C2E0012321E /* Renderer.swift */; };
+		4656BA1223147FED0006CB4B /* POTextStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4656BA1123147FED0006CB4B /* POTextStorage.swift */; };
 		46C7F171230D91C400137C94 /* Editor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C7F170230D91C400137C94 /* Editor.swift */; };
 		46C93E50230DBF870041A1E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4645A19F230C3BD50012321E /* Main.storyboard */; };
 		46C93E54230DC7020041A1E8 /* DefaultShader in Resources */ = {isa = PBXBuildFile; fileRef = 46C93E53230DC7020041A1E8 /* DefaultShader */; };
@@ -27,6 +28,7 @@
 		4645A1AA230C3BDF0012321E /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		4645A1AB230C3BDF0012321E /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		4645A1B2230C3C2E0012321E /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		4656BA1123147FED0006CB4B /* POTextStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POTextStorage.swift; sourceTree = "<group>"; };
 		46C7F170230D91C400137C94 /* Editor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Editor.swift; sourceTree = "<group>"; };
 		46C93E53230DC7020041A1E8 /* DefaultShader */ = {isa = PBXFileReference; lastKnownFileType = text; path = DefaultShader; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,7 +66,7 @@
 		4645A198230C3BD50012321E /* PsychOut */ = {
 			isa = PBXGroup;
 			children = (
-				46C7F16F230D919B00137C94 /* UI */,
+				46C7F16F230D919B00137C94 /* Editor */,
 				4645A1AF230C3C170012321E /* Renderer */,
 				4645A1AE230C3BE90012321E /* Application */,
 				4645A1A2230C3BD50012321E /* Info.plist */,
@@ -101,12 +103,13 @@
 			path = Renderer;
 			sourceTree = "<group>";
 		};
-		46C7F16F230D919B00137C94 /* UI */ = {
+		46C7F16F230D919B00137C94 /* Editor */ = {
 			isa = PBXGroup;
 			children = (
 				46C7F170230D91C400137C94 /* Editor.swift */,
+				4656BA1123147FED0006CB4B /* POTextStorage.swift */,
 			);
-			path = UI;
+			path = Editor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +186,7 @@
 				4645A19C230C3BD50012321E /* ViewController.swift in Sources */,
 				4645A19A230C3BD50012321E /* AppDelegate.swift in Sources */,
 				46C7F171230D91C400137C94 /* Editor.swift in Sources */,
+				4656BA1223147FED0006CB4B /* POTextStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
