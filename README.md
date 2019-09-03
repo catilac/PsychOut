@@ -7,10 +7,10 @@ Currently only supports editing a compute shader.
 ![Goop](/Screenshots/goopy.gif)
 
 # PHASE ONE TODO
-  - [🌞] Live code editing
-  - [🌞] Usable Editor
-  - [🌞] Transparent background for editor
-  - [ ] Add screen shots
+  - [x] Live code editing
+  - [x] Usable Editor
+  - [x] Transparent background for editor
+  - [x] Add screen shots
   - [ ] Debug output window
   - [ ] Incorporate frag and vert shaders
 
